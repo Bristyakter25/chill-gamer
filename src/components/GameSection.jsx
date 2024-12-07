@@ -21,7 +21,7 @@ function GameSection() {
                     <img  src={game.image} alt={game.title} className="w-[300px] h-[150px] rounded-md" />
                     <h3 className='text-center text-white my-3'>{game.title}</h3>
                     <p className='text-white text-center my-2'>Rating: {game.rating}</p>
-                    <NavLink to='/details'><button className="btn glass text-white btn-block">Explore Details</button></NavLink>
+                    <NavLink to={`/highest-rated-games/${game._id}`}><button className="btn glass text-white btn-block">Explore Details</button></NavLink>
                     
                 </div>
             ))}

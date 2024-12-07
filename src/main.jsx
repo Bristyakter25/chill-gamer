@@ -53,6 +53,10 @@ const router = createBrowserRouter([
         path:'/allReviews',
         element:<AllReview></AllReview>,
         loader:()=> fetch('http://localhost:5000/review')
+      },
+      {
+        path:'/highest-rated-games/:id',
+        element:<DetailsPage></DetailsPage>
       }
     ]
   },

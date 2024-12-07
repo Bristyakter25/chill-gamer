@@ -9,10 +9,10 @@ const AddReview = () => {
   const navigate = useNavigate();
   const [genres, setGenres] = useState(["Action", "RPG", "Adventure", "Shooter", "Puzzle"]); // Dropdown options
 
-  // Redirect non-logged-in users
+  
   if (!user) {
     navigate("/login");
-    return null; // Prevent rendering if not logged in
+    return null; 
   }
 
   const handleSubmit = (e) => {
@@ -60,7 +60,7 @@ fetch("http://localhost:5000/review",{
     <div className="max-w-lg mx-auto my-10">
       <h1 className="text-3xl font-bold mb-5">Add New Review</h1>
       <form onSubmit={handleSubmit} className="space-y-4 bg-white p-6 rounded shadow">
-        {/* Game Cover Image */}
+   
         <div>
           <label className="block font-medium">Game Cover Image (URL)</label>
           <input
@@ -72,7 +72,7 @@ fetch("http://localhost:5000/review",{
           />
         </div>
 
-        {/* Game Title */}
+       
         <div>
           <label className="block font-medium">Game Title</label>
           <input
@@ -84,7 +84,7 @@ fetch("http://localhost:5000/review",{
           />
         </div>
 
-        {/* Review Description */}
+
         <div>
           <label className="block font-medium">Review Description</label>
           <textarea
@@ -95,7 +95,7 @@ fetch("http://localhost:5000/review",{
           ></textarea>
         </div>
 
-        {/* Rating */}
+
         <div>
           <label className="block font-medium">Rating (1-10)</label>
           <input
@@ -109,7 +109,7 @@ fetch("http://localhost:5000/review",{
           />
         </div>
 
-        {/* Publishing Year */}
+    
         <div>
           <label className="block font-medium">Publishing Year</label>
           <input
@@ -123,7 +123,7 @@ fetch("http://localhost:5000/review",{
           />
         </div>
 
-        {/* Genre */}
+   
         <div>
           <label className="block font-medium">Genre</label>
           <select name="genre" className="select select-bordered w-full" required>
@@ -138,7 +138,7 @@ fetch("http://localhost:5000/review",{
           </select>
         </div>
 
-        {/* User Email */}
+
         <div>
           <label className="block font-medium">User Email</label>
           <input
@@ -149,7 +149,7 @@ fetch("http://localhost:5000/review",{
           />
         </div>
 
-        {/* User Name */}
+
         <div>
           <label className="block font-medium">User Name</label>
           <input
@@ -160,7 +160,7 @@ fetch("http://localhost:5000/review",{
           />
         </div>
 
-        {/* Submit Button */}
+
         <div>
           <button type="submit" className="btn btn-primary w-full">
             Submit Review

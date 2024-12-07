@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"; // To get the ID from the route
+import { useParams } from "react-router-dom"; 
 
 const ReviewDetails = () => {
-    const { id } = useParams(); // Extract the ID from the URL
+    const { id } = useParams();
     const [review, setReview] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews/${id}`) // Replace with your deployed server URL if necessary
+        fetch(`http://localhost:5000/reviews/${id}`) 
             .then((res) => res.json())
             .then((data) => {
                 setReview(data);
