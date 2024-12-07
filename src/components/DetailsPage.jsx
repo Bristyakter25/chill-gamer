@@ -16,9 +16,24 @@ const DetailsPage = () => {
                 return <p>Details not found!</p>;
             }
     return (
-        <div>
-            <h2>this is details page:{details.title}</h2>
-        </div>
+       <div className="flex justify-center items-center">
+         <div className="card bg-base-100 w-96 shadow-xl ">
+  <figure className="px-10 pt-10">
+    <img
+      src={details.image}
+      alt=""
+      className="rounded-xl" />
+  </figure>
+  <div className="card-body items-center text-center">
+    <h2 className="card-title font-bold text-2xl">{details.title}</h2>
+    <p className="font-semibold mb-2">{details.description}</p>
+    <p className="font-semibold text-xl mb-2">Developer: {details.developer}</p>
+    <p className="font-semibold text-xl mb-2">Release Date: {details.releaseDate}</p>
+    
+    
+  </div>
+</div>
+       </div>
     );
 };
 
