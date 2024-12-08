@@ -16,8 +16,8 @@ const DetailsPage = () => {
                 return <p>Details not found!</p>;
             }
     return (
-       <div className="flex justify-center items-center">
-         <div className="card bg-base-100 w-96 shadow-xl ">
+       <div className="flex justify-center items-center bg-base-200">
+         <div className="card bg-base-100 w-96 shadow-xl my-5">
   <figure className="px-10 pt-10">
     <img
       src={details.image}

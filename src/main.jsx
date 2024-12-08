@@ -17,6 +17,8 @@ import AddReview from './components/AddReview';
 import ReviewDetails from './components/ReviewDetails';
 
 import AllReview from './components/AllReviews';
+import MyReviews from './components/MyReview';
+
 
 const router = createBrowserRouter([
   {
@@ -57,6 +59,10 @@ const router = createBrowserRouter([
       {
         path:'/highest-rated-games/:id',
         element:<DetailsPage></DetailsPage>
+      },
+      {
+        path:'review/user/:email',
+        element:<MyReviews></MyReviews>
       }
     ]
   },

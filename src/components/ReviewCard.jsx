@@ -7,7 +7,7 @@ const ReviewCard = ({review}) => {
         
             <div className=" bg-base-100 w-[280px] shadow-xl rounded-lg flex flex-col items-center">
   <figure>
-    <img className="w-full rounded-lg"
+    <img className="w-[300px] h-[200px] rounded-lg"
       src={gameCover}
       alt="Shoes" />
   </figure>
