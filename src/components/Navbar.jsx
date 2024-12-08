@@ -19,7 +19,7 @@ const Navbar = () => {
    <NavLink to={`/review/user/${userEmail}`}><li><a>My Reviews</a></li></NavLink>
    
     
-    <li><a>Game WatchList</a></li>
+    
     </>
     return (
         <div className='bg-green-300'>
