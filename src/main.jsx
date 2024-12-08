@@ -18,6 +18,8 @@ import ReviewDetails from './components/ReviewDetails';
 
 import AllReview from './components/AllReviews';
 import MyReviews from './components/MyReview';
+import UpdateReviewData from './components/UpdateReviewData';
+
 
 
 const router = createBrowserRouter([
@@ -63,6 +65,11 @@ const router = createBrowserRouter([
       {
         path:'review/user/:email',
         element:<MyReviews></MyReviews>
+      },
+      {
+        path: 'review/user/:email/updateReview/:id',
+        element: <UpdateReviewData />,
+        loader: ({ params }) => fetch(`http://localhost:5000/review/${params.id}`)
       }
     ]
   },
