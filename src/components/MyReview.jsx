@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const MyReviews = () => {
-  const { email } = useParams(); 
+  const { email,setReview,review } = useParams(); 
   const [reviews, setReviews] = useState([]);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
@@ -56,6 +56,8 @@ const MyReviews = () => {
                   text: "Your file has been deleted.",
                   icon: "success"
                 });
+                const remaining = review.filter(rev => rev._id!== id )
+                setReview(remaining); 
               }
         })
         }
@@ -95,7 +97,7 @@ const MyReviews = () => {
               </Link>
                 <button
                   className="mt-5 btn bg-cyan-300"
-                  onClick={() => handleDelete(review._id)}  // Pass review._id
+                  onClick={() => handleDelete(review._id)}  
                 >
                   Delete
                 </button>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"; 
+import { NavLink, useParams } from "react-router-dom"; 
 
 const ReviewDetails = () => {
     const { id } = useParams();
@@ -18,6 +18,10 @@ const ReviewDetails = () => {
                 setLoading(false);
             });
     }, [id]);
+
+
+    
+      
 
     if (loading) {
         return <p>Loading...</p>;
@@ -38,6 +42,7 @@ const ReviewDetails = () => {
             <p className="font-semibold text-xl text-center"><strong>Genre:</strong> {review.genre}</p>
             <p className="font-semibold text-xl text-center"><strong>Reviewer Name:</strong> {review.userName}</p>
             <p className="font-semibold text-xl text-center"><strong>Reviewer Email:</strong> {review.userEmail}</p>
+           
         </div>
     );
 };
