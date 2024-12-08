@@ -19,8 +19,8 @@ import ReviewDetails from './components/ReviewDetails';
 import AllReview from './components/AllReviews';
 import MyReviews from './components/MyReview';
 import UpdateReviewData from './components/UpdateReviewData';
-import GameWatchList from './components/GameWatchlist';
-import PrivateRoute from './components/PrivateRoute';
+
+import ErrorPage from './components/ErrorPage';
 
 
 
@@ -28,6 +28,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:"/",
