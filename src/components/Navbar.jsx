@@ -14,7 +14,7 @@ const Navbar = () => {
   };
     const lists = <>
    <NavLink to="/"> <li><a>Home</a></li></NavLink>
-   <NavLink to="/addReview"><li><a>Add Review</a></li></NavLink>
+   <NavLink to="/addReview"><li><a>Add Reviews</a></li></NavLink>
    <NavLink to="/allReviews"><li><a>All Review</a></li></NavLink>
    <NavLink to={`/review/user/${userEmail}`}><li><a>My Reviews</a></li></NavLink>
    

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { ClipLoader } from 'react-spinners';
 import Swal from 'sweetalert2';
 
 const MyReviews = () => {
@@ -28,7 +29,11 @@ const MyReviews = () => {
   }, [email]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <ClipLoader color="#36d7b7" size={50} />
+      </div>
+    );
   }
 
   const handleDelete = (id) => {  // Change _id to id
@@ -65,10 +70,11 @@ const MyReviews = () => {
   };
 
   return (
-    <div className="my-reviews lg:max-w-5xl mx-auto">
+    <div className="my-reviews w-[400px] lg:w-[1024px] mx-auto">
       <h2 className="text-3xl font-bold text-center my-5">My Reviews</h2>
       
-      <table className="mx-auto lg:w-[900px] md:w-96 border-collapse border border-gray-300">
+      <div className="overflow-x-auto">
+      <table className=" mx-auto lg:w-[900px] md:w-96 border-collapse border border-gray-300">
         <thead>
           <tr>
             <th className="text-center bg-slate-200 p-2">Game Image</th>
@@ -106,6 +112,7 @@ const MyReviews = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

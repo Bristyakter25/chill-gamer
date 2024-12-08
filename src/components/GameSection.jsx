@@ -13,9 +13,9 @@ function GameSection() {
     }, []);
 
     return (
-        <div className='w-[800px] mx-auto'> 
+        <div className='lg:w-[800px] w-[400px] mx-auto'> 
         <h2 className='font-extrabold text-3xl text-center my-5'>Highest Rated Games</h2>
-        <div className="grid grid-cols-3 gap-4 border bg-black p-7 rounded-xl">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-4 border bg-black p-7 rounded-xl">
             {games.map((game) => (
                 <div key={game._id} className=" ">
                     <img  src={game.image} alt={game.title} className="w-[300px] h-[150px] rounded-md" />
