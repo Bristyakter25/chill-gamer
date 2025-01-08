@@ -21,8 +21,8 @@
  - **React Icons:** For adding icons to the UI.
 
 ## How to Run Locally:
- 1. Clone the repository: git clone https://github.com/Bristyakter25/game-review-website-client.git
- 2. Navigate into the directory: cd game-review-website-client
+ 1. Clone the repository: git clone https://github.com/Bristyakter25/chill-gamer.git
+ 2. Navigate into the directory: cd chill-gamer
  3. Install dependencies: npm install
  4. Start the development server: npm start
  5. Open your browser and go to http://localhost:5000.
