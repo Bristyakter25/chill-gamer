@@ -1,8 +1,38 @@
-# React + Vite
+# Game Review Website - Overview
+#### The Game Review Website allows users to explore, review, and rate their favorite games. It features a dynamic interface, user authentication, and a database-driven backend to manage reviews and user data. The project is built with modern web technologies for a responsive and engaging experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Client-Side
 
-Currently, two official plugins are available:
+### Technologies Used:
+ - React.js: Frontend library for building the user interface.
+ - Tailwind CSS: For responsive and modern styling.
+ - React Router: For seamless navigation.
+ - Firebase: For user authentication and hosting.
+### Features:
+ - User-friendly interface for browsing and reviewing games.
+ - Responsive design optimized for all devices.
+ - Secure user login and registration using Firebase.
+ - Game search and filter functionality.
+### Dependencies
+ - **React:** For building the user interface.
+ - **React Router:** For navigation and routing.
+ - **Tailwind CSS:** For responsive and utility-first CSS styling.
+ - **Firebase:** For authentication and hosting.
+ - **React Icons:** For adding icons to the UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Run Locally:
+ 1. Clone the repository: git clone https://github.com/Bristyakter25/game-review-website-client.git
+ 2. Navigate into the directory: cd game-review-website-client
+ 3. Install dependencies: npm install
+ 4. Start the development server: npm start
+ 5. Open your browser and go to http://localhost:5000.
+
+## Live Link : https://chill-gamer-3b17d.web.app/
+## Client Side Repo: 
+
+
+
+
+
+
+ - 
