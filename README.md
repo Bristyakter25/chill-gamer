@@ -28,7 +28,7 @@
  5. Open your browser and go to http://localhost:5000.
 
 ## Live Link : https://chill-gamer-3b17d.web.app/
-## Client Side Repo: 
+## Client Side Repo: https://github.com/Bristyakter25/chill-gamer
 
 
 
