@@ -51,9 +51,11 @@ Full Create, Read, Update, and Delete functionality is provided for managing rev
 
 ### MongoDB Integration
 Reviews, user data, and watchlist items are stored and retrieved from a MongoDB database, allowing for efficient data management and retrieval.
-```
+
+
 
 ## 📦 Dependencies  
+### 🌐 **Frontend (Client-Side) Dependencies**
 
 ```json
 "dependencies": {
@@ -63,6 +65,17 @@ Reviews, user data, and watchlist items are stored and retrieved from a MongoDB 
   "firebase": "^9.x.x",
   "react-icons": "^4.x.x"
 }
+```
+## 🔗 **Backend (Server-Side) Dependencies**  
+
+```json
+"dependencies": {
+  "express": "^4.x.x",
+  "mongoose": "^7.x.x",
+  "cors": "^2.x.x",
+  "dotenv": "^16.x.x",
+  "jsonwebtoken": "^9.x.x",
+  }
 ```
 
 ---
